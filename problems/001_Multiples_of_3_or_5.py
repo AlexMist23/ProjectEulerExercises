@@ -36,5 +36,7 @@ def multiples_of_3_or_5(num_range):
 
 if __name__ == '__main__':
     
-        result = sum(multiples_of_3_or_5(0))
-        print(result)
+    result = multiples_of_3_or_5(0)
+    if result:
+        result = sum(result)
+    print(result)
